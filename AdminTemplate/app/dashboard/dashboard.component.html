@@ -1,0 +1,25 @@
+﻿<div class="container-fluid dashboard-component">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Dashboard</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Type your name:</label>
+                <input type="text" class="form-control" [(ngModel)]="name" (ngModelChange)="sendName(name)"
+                       name="userName" #userName="ngModel">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12" *ngIf="name">
+            <h2>{{hello}}</h2>
+            <p> This is a starting point for building a Single Page Application (SPA) with ASP.NET using Angular2 and ServiceStack.</p>
+        </div>
+    </div>
+</div>

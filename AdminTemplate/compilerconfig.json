@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "app/dashboard/dashboard.component.css",
+    "inputFile": "app/dashboard/dashboard.component.scss"
+  },
+  {
+    "outputFile": "src/app/dashboard/dasboard.component.css",
+    "inputFile": "src/app/dashboard/dasboard.component.scss"
+  },
+  {
+    "outputFile": "app/app.component.css",
+    "inputFile": "app/app.component.scss"
+  }
+]
