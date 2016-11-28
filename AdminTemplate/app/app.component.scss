@@ -124,36 +124,40 @@
         width: 200px;
     }
     /* Side Navigation */
+    .side-nav {
+        border: 1px solid #e7e7e7;
+        background-color: $primary-color;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .side-nav > li > a {
+        color: $links-color !important;
+    }
+
+    .side-nav > li.active > a {
+        background-color: $secondary-color !important;
+        color: #fff !important;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: $secondary-color !important;
+        color: #fff !important;
+    }
+
     @media(min-width:768px) {
         .side-nav {
             position: absolute;
             top: 56px;
+            bottom: 0;
             left: -225px;
             width: 225px;
-            border: 1px solid #e7e7e7;
-            background-color: $primary-color;
-            bottom: 0;
             padding-bottom: 40px;
-            -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .side-nav > li > a {
             width: 225px;
-            color: $links-color !important;
-        }
-
-        .side-nav > li.active > a {
-            background-color: $secondary-color !important;
-            color: #fff !important;
-        }
-
-        .side-nav li a:hover,
-        .side-nav li a:focus {
-            outline: none;
-            background-color: $secondary-color !important;
-            color: #fff !important;
         }
     }
 }
@@ -162,5 +166,47 @@
     #page-wrapper {
         -webkit-transform: translateX(225px);
         transform: translateX(225px);
+    }
+}
+
+@media(max-width:768px) {
+    #wrapper {
+        .navbar-inverse {
+            display: flex;
+
+            .navbar-header {
+                .navbar-toggle {
+                    padding: 1px 6px;
+                    margin: 0;
+                    font-size: 18px;
+                   line-height: 54px;
+                }
+
+                .sidebar-toggle {
+                    display: none;
+                }
+
+                .navbar-brand{
+                    line-height: 54px;
+                    padding: 0;
+                }
+            }
+
+            .top-nav {
+                position: absolute;
+                right: 0;
+                padding-right: 0;
+                height: 100%;
+            }
+
+        }
+
+        #page-wrapper{
+            .navbar-collapse{
+                ul.side-nav{
+                margin-top: 0;
+            }
+            }
+        }
     }
 }

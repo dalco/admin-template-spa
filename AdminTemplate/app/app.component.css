@@ -84,32 +84,53 @@
     margin: 5px 0; }
   #wrapper ul.alert-dropdown {
     width: 200px; }
+  #wrapper .side-nav {
+    border: 1px solid #e7e7e7;
+    background-color: #F8F8F8;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+  #wrapper .side-nav > li > a {
+    color: #2196f3 !important; }
+  #wrapper .side-nav > li.active > a {
+    background-color: #74A5D8 !important;
+    color: #fff !important; }
+  #wrapper .side-nav li a:hover,
+  #wrapper .side-nav li a:focus {
+    outline: none;
+    background-color: #74A5D8 !important;
+    color: #fff !important; }
   @media (min-width: 768px) {
     #wrapper .side-nav {
       position: absolute;
       top: 56px;
+      bottom: 0;
       left: -225px;
       width: 225px;
-      border: 1px solid #e7e7e7;
-      background-color: #F8F8F8;
-      bottom: 0;
-      padding-bottom: 40px;
-      -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+      padding-bottom: 40px; }
     #wrapper .side-nav > li > a {
-      width: 225px;
-      color: #2196f3 !important; }
-    #wrapper .side-nav > li.active > a {
-      background-color: #74A5D8 !important;
-      color: #fff !important; }
-    #wrapper .side-nav li a:hover,
-    #wrapper .side-nav li a:focus {
-      outline: none;
-      background-color: #74A5D8 !important;
-      color: #fff !important; } }
+      width: 225px; } }
 
 #wrapper.show-nav #page-wrapper {
   -webkit-transform: translateX(225px);
   transform: translateX(225px); }
+
+@media (max-width: 768px) {
+  #wrapper .navbar-inverse {
+    display: flex; }
+    #wrapper .navbar-inverse .navbar-header .navbar-toggle {
+      padding: 1px 6px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 54px; }
+    #wrapper .navbar-inverse .navbar-header .sidebar-toggle {
+      display: none; }
+    #wrapper .navbar-inverse .navbar-header .navbar-brand {
+      line-height: 54px;
+      padding: 0; }
+    #wrapper .navbar-inverse .top-nav {
+      position: absolute;
+      right: 0;
+      padding-right: 0;
+      height: 100%; }
+  #wrapper #page-wrapper .navbar-collapse ul.side-nav {
+    margin-top: 0; } }
 
