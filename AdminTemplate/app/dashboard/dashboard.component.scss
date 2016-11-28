@@ -1,2 +1,5 @@
-﻿body {
+﻿@import '../../assets/styles/variables';
+
+h1{
+    color: $secondary-color;
 }
