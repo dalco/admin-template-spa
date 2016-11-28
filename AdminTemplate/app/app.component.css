@@ -1,20 +1,47 @@
 ﻿#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   /* Top Navigation */
   /* Side Navigation */ }
   #wrapper #page-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: 300ms ease all;
+    transition: 300ms ease all;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     padding-top: 54px;
-    padding-left: 225px; }
+    padding-left: 0; }
   #wrapper .navbar {
-    min-height: 50px; }
+    min-height: 50px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
   #wrapper .navbar-inverse {
     background-color: #F8F8F8;
     border-bottom: 1px solid #e7e7e7; }
-  #wrapper .navbar-inverse .navbar-brand {
-    color: #777;
-    font-size: 18px;
-    height: 54px; }
-  #wrapper .navbar-inverse .navbar-brand:hover {
-    color: #74A5D8; }
+    #wrapper .navbar-inverse .navbar-header .sidebar-toggle {
+      background: transparent;
+      border: 0;
+      position: relative;
+      float: left;
+      padding: 15px 20px;
+      font-size: 18px;
+      height: 54px; }
+      #wrapper .navbar-inverse .navbar-header .sidebar-toggle:focus {
+        outline-width: 0; }
+    #wrapper .navbar-inverse .navbar-header .navbar-brand {
+      color: #777;
+      font-size: 18px;
+      height: 54px;
+      padding-left: 0; }
+      #wrapper .navbar-inverse .navbar-header .navbar-brand:hover {
+        color: #74A5D8; }
   #wrapper .top-nav {
     padding: 0 15px;
     display: flex;
@@ -59,16 +86,13 @@
     width: 200px; }
   @media (min-width: 768px) {
     #wrapper .side-nav {
-      position: fixed;
+      position: absolute;
       top: 56px;
-      left: 225px;
+      left: -225px;
       width: 225px;
-      margin-left: -225px;
       border: 1px solid #e7e7e7;
-      overflow-y: auto;
       background-color: #F8F8F8;
       bottom: 0;
-      overflow-x: hidden;
       padding-bottom: 40px;
       -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -84,4 +108,8 @@
       outline: none;
       background-color: #74A5D8 !important;
       color: #fff !important; } }
+
+#wrapper.show-nav #page-wrapper {
+  -webkit-transform: translateX(225px);
+  transform: translateX(225px); }
 

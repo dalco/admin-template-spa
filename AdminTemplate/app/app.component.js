@@ -12,6 +12,28 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngAfterViewInit = function () {
+        var that = this;
+        $(function () {
+            $('.sidebar-toggle')
+                .click(function () {
+                // Calling a function in case you want to expand upon this.
+                toggleNav();
+            });
+        });
+        function toggleNav() {
+            if ($('#wrapper').hasClass('show-nav')) {
+                // Do things on Nav Close
+                $('#wrapper').removeClass('show-nav');
+                that.sidenavOpen = false;
+            }
+            else {
+                // Do things on Nav Open
+                $('#wrapper').addClass('show-nav');
+                that.sidenavOpen = true;
+            }
+        }
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
