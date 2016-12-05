@@ -1,128 +1,148 @@
 ﻿
-    <div id="wrapper">
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-sidenav-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <button type="button" class="sidebar-toggle">
-                    <i class="fa fa-bars" *ngIf="!sidenavOpen"></i>
-                    <i class="fa fa-chevron-left" *ngIf="sidenavOpen"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">Company Logo</a>
-            </div>
-            <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <strong>Lorem</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-sidenav-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <button type="button" class="sidebar-toggle">
+                <i class="fa fa-bars" *ngIf="!sidenavOpen"></i>
+                <i class="fa fa-chevron-left" *ngIf="sidenavOpen"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">Company Logo</a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu message-dropdown">
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading">
+                                        <strong>Lorem</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <strong>Lorem</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading">
+                                        <strong>Lorem</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- /.navbar-collapse -->
-        </nav>
-        <div id="page-wrapper">
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-sidenav-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li class="">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                            </div>
+                        </a>
                     </li>
-                    <li>
-                        <a href=""><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    <li class="message-footer">
+                        <a href="#">Read All New Messages</a>
                     </li>
                 </ul>
-            </div>
-            <router-outlet></router-outlet>
-            <!-- /.container-fluid -->
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu alert-dropdown">
+                    <li>
+                        <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">View All</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Username<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div id="page-wrapper">
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-sidenav-collapse">
+
+            <ul class="nav navbar-nav side-nav">
+                <li class="user" *ngIf="sidenavOpen">
+                    <div class="col-md-12 text-center">
+                        <i class="fa fa-user-circle-o"></i>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <strong>Username</strong>
+                        <p>Last access: 24/08/2016</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-fw fa-home" [class.pull-right]="!sidenavOpen"></i> <span *ngIf="sidenavOpen">Welcome page</span> </a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-fw fa-file-o" [class.pull-right]="!sidenavOpen"></i> <span *ngIf="sidenavOpen">News</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fa fa-fw fa-line-chart" [class.pull-right]="!sidenavOpen"></i> <span *ngIf="sidenavOpen">Charts</span><i class="fa fa-caret-right pull-right" *ngIf="sidenavOpen"></i></a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="#"><i class="fa fa-fw fa-users"></i> Registry</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-database"></i> Ledger</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-fw fa-folder-o" [class.pull-right]="!sidenavOpen"></i> <span *ngIf="sidenavOpen">Backlog</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-fw fa-file-text-o" [class.pull-right]="!sidenavOpen"></i> <span *ngIf="sidenavOpen">Invoices</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-fw fa-paper-plane-o" [class.pull-right]="!sidenavOpen"></i> <span *ngIf="sidenavOpen">Communications</span></a>
+                </li>
+            </ul>
         </div>
-        <!-- /#page-wrapper -->
+        <router-outlet></router-outlet>
+        <!-- /.container-fluid -->
     </div>
+    <!-- /#page-wrapper -->
+</div>
